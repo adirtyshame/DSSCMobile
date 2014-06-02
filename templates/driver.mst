@@ -1,0 +1,21 @@
+<h2>Fahrer {{driver}}</h2>
+<div class="container">
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+    <th>Lauf</th><th>Klasse</th><th>Reaktion</th><th>Top-Speed</th><th>Zeit</th>
+</tr>
+</thead>
+<tbody>
+    {{#heats}}
+        <tr>
+            <td>{{heatNo}}</td>
+            <td>{{shortName}}</td>
+            <td>{{timeReaction}}</td>
+            <td>{{topSpeed}}</td>
+            <td>{{timeTotal}}</td>
+        </tr>
+    {{/heats}}
+</tbody>
+</table>
+</div>
